@@ -1,0 +1,146 @@
+.header {
+  padding-top: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // align-items: flex-end;
+}
+
+.header__block-1 {
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__nav--close {
+  display: none;
+}
+
+.header__nav {
+  width: 100%;
+  padding-top: 20px;
+  background-color: $white;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 20;
+}
+
+.header__btn {
+  background-color: $blue;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 12px;
+  box-shadow: inset 2.3px 2.3px 5.5px rgba(136, 165, 191, 0.48);
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__list {
+  text-align: center;
+}
+
+.header__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header__link {
+  font-size: 18px;
+  color: $blue;
+  font-weight: 600;
+  line-height: 25px;
+
+  &:hover {
+    color: $blue-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__logo {
+  width: 37%;
+}
+
+.header__block {
+  width: 100%;
+  background: linear-gradient(180deg, $white, $main-background);
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__img-bottles {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  top: 41.5%;
+}
+
+.header__title {
+  position: absolute;
+  top: 36%;
+  left: 8%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.8607px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.header__block-2 {
+  background-color: $main-background;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.header__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__button {
+  @include button-red;
+  width: 34%;
+  text-align: center;
+}
+
+.header__input {
+  width: 40%;
+  background: rgba(164, 234, 255, 0.5);
+  border-radius: 5.6px;
+  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  color: $blue-2;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.3135px;
+  line-height: 17px
+}
+
+.header__input::placeholder {
+  color: $blue-2;
+}
