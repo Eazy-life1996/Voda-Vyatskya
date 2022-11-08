@@ -1,9 +1,5 @@
 .header {
-  padding-top: 30px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // align-items: flex-end;
+  padding-top: 25px;
 }
 
 .header__block-1 {
@@ -143,4 +139,112 @@
 
 .header__input::placeholder {
   color: $blue-2;
+}
+
+.header__img--desktop,
+.header__img-bottles--desktop {
+  display: none;
+}
+
+
+@media (min-width:$desktop-width) {
+  .header {
+    position: relative;
+    padding-top: 0;
+    background-color: $main-background;
+  }
+
+  .header__block-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.6);;
+  }
+
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__block {
+    background: none;
+  }
+
+  .header__nav {
+    background: none;
+    position: static;
+    width: 56.5%;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__logo {
+    width: 23.8%;
+  }
+
+  .header__title {
+    font-size: 56.8px;
+    line-height: 69px;
+    top: 29%;
+    left: 8.5%;
+  }
+
+  .header__img-bottles,
+  .header__img {
+    display: none;
+  }
+
+  .header__img-bottles--desktop {
+    display: block;
+    width: 36.5%;
+    position: absolute;
+    right: 7%;
+    top: 35%;
+  }
+
+  .header__img--desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .header__block-2 {
+    position: absolute;
+    top: 69%;
+    left: 8%;
+    background: none;
+    width: 36.4%;
+    padding: 0;
+  }
+
+
+  .header__form {
+    width: 100%;
+  }
+
+  .header__input {
+    width: 54.5%;
+    font-size: 25.3239px;
+    line-height: 31px;
+    padding-top: 15px;
+    padding-bottom: 23px;
+    margin-right: -5px;
+    color: $white;
+  }
+
+  .header__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .header__button {
+    width: 45.5%;
+    font-size: 25.3px;
+    line-height: 31px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }
