@@ -1,0 +1,109 @@
+.calculator {
+  background-color: $main-background;
+  background-image: url(../img/svg/background-calculate.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculator__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29.4545px;
+  line-height: 36px;
+  text-align: center;
+  color: $black;
+}
+
+.calculator__block {
+  background-color: $white;
+  border-radius: 10px;
+  width: 95.4%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 6.16%;
+  padding-right: 6.16%;
+  margin: 0 auto;
+  margin-top: 33px;
+  box-shadow: inset 1px 2.5px 1px rgba(255, 255, 255, 0.5), inset -1.1px 2.5px 1.1px rgba(255, 255, 255, 0.5), inset 0px 1.1px 1.1px rgba(255, 255, 255, 0.5);
+}
+
+.calculator__text,
+.calculator__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 18px;
+}
+
+.calculator__label {
+  margin: 0;
+}
+
+.calculator__checkbox-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.7px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.calculator__p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8788px;
+  line-height: 16px;
+  color: $black;
+  width: 48%
+}
+
+.calculator__submit {
+  @include button-red;
+  font-size: 16.4px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 19.7%;
+  padding-right: 19.7%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.calculator__count {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $black;
+  margin-left: 13%;
+}
+
+.calculator__count--bottles::before {
+  content: url(../img/svg/bottle.svg);
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.calculator__count--price {
+  margin-left: 14.2%;
+}
+
+.calculator__count--price::before {
+  content: url(../img/svg/price.svg);
+  position: absolute;
+  top: 1px;
+  left: -35px;
+}
+
+.calculator__inner-2 {
+  // position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
