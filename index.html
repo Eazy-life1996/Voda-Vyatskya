@@ -99,6 +99,9 @@
         Калькулятор воды
       </h2>
       <div class="calculator__block">
+        <h2 class="calculator__title-inner">
+          Калькулятор воды
+        </h2>
         <form action="#" method="post" class="calculator__form">
           <div class="calculator__flex">
             <div class="calculator__inner">
@@ -109,23 +112,23 @@
               <label for="office" class="calculator__checkbox-btn">
                 В офис
               </label>
-              <input type="checkbox" class="calculator__checkbox" id="home" name="home">
+              <input type="checkbox" class="calculator__checkbox" id="home" name="home" checked>
               <label for="home" class="calculator__checkbox-btn">
                 Домой
               </label>
             </div>
-            <div class="calculator__inner">
+            <div class="calculator__inner calculator__inner--flex">
               <label for="person" class="calculator__label">Будут пить</label>
-              <input type="number" id="person" name="person" class="calculator__input">
-              <span class="calculator__span">Человек</span>
+              <input type="number" id="person" name="person" value="1" class="calculator__input">
+              <span class="calculator__span calculator__span--2">Человек</span>
               <button class="calculator__button calculator__button--plus">+</button>
               <button class="calculator__button calculator__button--minus">-</button>
             </div>
-            <div class="calculator__inner">
+            <div class="calculator__inner calculator__inner--position">
               <p class="calculator__text">
                 Готовка
               </p>
-              <input type="checkbox" class="calculator__checkbox" id="withcooking" name="withcooking">
+              <input type="checkbox" class="calculator__checkbox" id="withcooking" name="withcooking" checked>
               <label for="withcooking" class="calculator__checkbox-btn">
                 С готовкой
               </label>
@@ -134,21 +137,21 @@
                 Без готовки
               </label>
             </div>
-            <div class="calculator__inner">
+            <div class="calculator__inner calculator__inner--flex">
               <label for="days" class="calculator__label">Нам нужен запас на</label>
-              <input type="number" id="days" name="days" class="calculator__input">
+              <input type="number" id="days" name="days" value="1" class="calculator__input">
               <span class="calculator__span">Дней</span>
               <button class="calculator__button calculator__button--plus">+</button>
               <button class="calculator__button calculator__button--minus">-</button>
             </div>
-            <div class="calculator__flex">
-              <div class="calculator__inner calculator__inner-2">
+            <div class="calculator__inner-block">
+              <div class="calculator__inner-2">
                 <p class="calculator__p">
                   Ориентировочное количество воды
                 </p>
                 <span class="calculator__count calculator__count--bottles">1</span>
               </div>
-              <div class="calculator__inner calculator__inner-2">
+              <div class="calculator__inner-2">
                 <p class="calculator__p">
                   Цена со скидкой 10% -от 20 бутылей
                 </p>
@@ -156,6 +159,7 @@
               </div>
               <button class="calculator__submit" type="submit">Заказать</button>
             </div>
+          </div>
         </form>
       </div>
     </section>
