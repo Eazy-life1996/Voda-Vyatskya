@@ -1,0 +1,137 @@
+.catalog {
+  background-color: $main-background;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.catalog__title {
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29.4px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.catalog__link {
+  background-color: $grey-second;
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  text-transform: uppercase;
+  width: min-content;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 7.6%;
+  padding-left: 7.6%;
+  border: 1px solid $black;
+  box-shadow: 6px 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.catalog__list {
+  margin-top: 26px;
+  margin-bottom: 56px;
+}
+
+.catalog__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__card {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 7.7px;
+  width: 54.6%;
+  padding-top: 38px;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.catalog__img {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.catalog__p {
+  color: $black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.3px;
+  line-height: 36px;
+  margin-left: 9.3%;
+}
+
+.catalog__submit {
+  @include button-red;
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.catalog__input {
+  width: 34px;
+  color: $black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.0124px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid $black;
+  border-radius: 6.8px;
+  margin-right: 13%;
+}
+
+.catalog__span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27.5608px;
+  line-height: 39px;
+  color: $black;
+}
+
+.catalog__inner {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__button {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.7027px;
+  line-height: 25px;
+  color: $black;
+}
+
+.catalog__button--plus {
+  right: 0;
+  top: 20%;
+}
+
+.catalog__button--minus {
+  right: 40%;
+  top: 20%;
+}
